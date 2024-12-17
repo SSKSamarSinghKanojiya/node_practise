@@ -22,6 +22,8 @@ app.use("/menu",menuRoutes)
 
 const PORT = 3000;
 
+//commit added successfully
+
 app.listen(PORT, () => {
   console.log(`Server is Running on PORT is ${PORT}`);
 });
