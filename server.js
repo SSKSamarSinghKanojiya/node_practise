@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const db = require("./db.js");
+require("dotenv").config()
 const Person = require("./models/Person.js");
 const MenuItem = require("./models/MenuItem.js");
 const bodyParser = require("body-parser");
@@ -20,7 +21,8 @@ app.use("/person",personRoutes)
 app.use("/menu",menuRoutes)
 
 
-const PORT = 3000;
+// const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //commit added successfully
 
